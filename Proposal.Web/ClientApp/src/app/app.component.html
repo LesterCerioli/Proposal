@@ -1,0 +1,409 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(black, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card):hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card {
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 60px;
+  }
+
+  svg#rocket {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+  }
+
+  svg#rocket-smoke {
+    height: 100vh;
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+  .terminal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+  }
+
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal pre {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .circle-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  .github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  }
+
+  .github-star-badge:hover {
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge .material-icons {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/png;base64,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"
+  />
+  <span>BlendIT</span>
+    <div class="spacer"></div>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+    
+    <svg id="twitter-logo" height="24" data-name="Logo — FIXED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+          }
+
+          .cls-2 {
+            fill: #ffffff;
+          }
+        </style>
+      </defs>
+      <rect class="cls-1" width="400" height="400" />
+      <path class="cls-2" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"
+      />
+    </svg>
+    
+  </a>
+</div>
+
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    
+
+    <span>{{ title }} app is running!</span>
+
+    
+
+  </div>
+  
+  <input type="hidden" #selection>
+
+  
+  <!-- Links -->
+  <div class="card-container">
+    <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
+      <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
+        <path id="Path_15" data-name="Path 15" d="M4099.584,972.736h0l-10.882,3.9,1.637,14.4,9.245,5.153,9.245-5.153,1.686-14.4Z" transform="translate(-4088.702 -972.736)" fill="#ffa726"/>
+        <path id="Path_16" data-name="Path 16" d="M4181.516,972.736v23.453l9.245-5.153,1.686-14.4Z" transform="translate(-4170.633 -972.736)" fill="#fb8c00"/>
+        <path id="Path_17" data-name="Path 17" d="M4137.529,1076.127l-7.7-3.723,4.417-2.721,7.753,3.723Z" transform="translate(-4125.003 -1058.315)" fill="#ffe0b2"/>
+        <path id="Path_18" data-name="Path 18" d="M4137.529,1051.705l-7.7-3.723,4.417-2.721,7.753,3.723Z" transform="translate(-4125.003 -1036.757)" fill="#fff3e0"/>
+        <path id="Path_19" data-name="Path 19" d="M4137.529,1027.283l-7.7-3.723,4.417-2.721,7.753,3.723Z" transform="translate(-4125.003 -1015.199)" fill="#fff"/>
+      </svg>
+    </a>
+
+    <a class="circle-link" title="CLI" href="https://cli.angular.io/" target="_blank" rel="noopener">
+      <svg alt="Angular CLI Logo" xmlns="http://www.w3.org/2000/svg" width="21.762" height="23.447" viewBox="0 0 21.762 23.447">
+        <g id="Group_21" data-name="Group 21" transform="translate(0)">
+          <path id="Path_20" data-name="Path 20" d="M2660.313,313.618h0l-10.833,3.9,1.637,14.4,9.2,5.152,9.244-5.152,1.685-14.4Z" transform="translate(-2649.48 -313.618)" fill="#37474f"/>
+          <path id="Path_21" data-name="Path 21" d="M2741.883,313.618v23.447l9.244-5.152,1.685-14.4Z" transform="translate(-2731.05 -313.618)" fill="#263238"/>
+          <path id="Path_22" data-name="Path 22" d="M2692.293,379.169h11.724V368.618h-11.724Zm11.159-.6h-10.608v-9.345h10.621v9.345Z" transform="translate(-2687.274 -362.17)" fill="#fff"/>
+          <path id="Path_23" data-name="Path 23" d="M2709.331,393.688l.4.416,2.265-2.28-2.294-2.294-.4.4,1.893,1.893Z" transform="translate(-2702.289 -380.631)" fill="#fff"/>
+          <rect id="Rectangle_12" data-name="Rectangle 12" width="3.517" height="0.469" transform="translate(9.709 13.744)" fill="#fff"/>
+        </g>
+      </svg>
+    </a>
+
+    <a class="circle-link" title="Augury" href="https://augury.rangle.io/" target="_blank" rel="noopener">
+      <svg alt="Angular Augury Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.81" height="23.447" viewBox="0 0 21.81 23.447">
+        <defs>
+          <clipPath id="clip-path">
+            <rect id="Rectangle_13" data-name="Rectangle 13" width="10.338" height="10.27" fill="none"/>
+          </clipPath>
+        </defs>
+        <g id="Group_25" data-name="Group 25" transform="translate(0)">
+          <path id="Path_24" data-name="Path 24" d="M3780.155,311.417h0l-10.881,3.9,1.637,14.4,9.244,5.152,9.244-5.152,1.685-14.4Z" transform="translate(-3769.274 -311.417)" fill="#4a3493"/>
+          <path id="Path_25" data-name="Path 25" d="M3862.088,311.417v23.447l9.244-5.152,1.685-14.4Z" transform="translate(-3851.207 -311.417)" fill="#311b92"/>
+          <g id="Group_24" data-name="Group 24" transform="translate(6.194 6.73)" opacity="0.5">
+            <g id="Group_23" data-name="Group 23" transform="translate(0 0)">
+              <g id="Group_22" data-name="Group 22" clip-path="url(#clip-path)">
+                <path id="Path_26" data-name="Path 26" d="M3832.4,373.252a5.168,5.168,0,1,1-5.828-4.383,5.216,5.216,0,0,1,2.574.3,3.017,3.017,0,1,0,3.252,4.086Z" transform="translate(-3822.107 -368.821)" fill="#fff"/>
+              </g>
+            </g>
+          </g>
+          <path id="Path_27" data-name="Path 27" d="M3830.582,370.848a5.162,5.162,0,1,1-3.254-4.086,3.017,3.017,0,1,0,3.252,4.086Z" transform="translate(-3814.311 -359.969)" fill="#fff"/>
+        </g>
+      </svg>
+    </a>
+
+    
+
+     
+
+    
+  </div>
+
+  
+  
+
+  
+
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>

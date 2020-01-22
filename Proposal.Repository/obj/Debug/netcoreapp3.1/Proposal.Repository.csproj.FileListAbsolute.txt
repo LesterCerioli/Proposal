@@ -1,0 +1,8 @@
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\bin\Debug\netcoreapp3.1\Proposal.Repository.deps.json
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\bin\Debug\netcoreapp3.1\Proposal.Repository.dll
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\bin\Debug\netcoreapp3.1\Proposal.Repository.pdb
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\obj\Debug\netcoreapp3.1\Proposal.Repository.csprojAssemblyReference.cache
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\obj\Debug\netcoreapp3.1\Proposal.Repository.AssemblyInfoInputs.cache
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\obj\Debug\netcoreapp3.1\Proposal.Repository.AssemblyInfo.cs
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\obj\Debug\netcoreapp3.1\Proposal.Repository.dll
+C:\Users\Developer\Source\Repos\Proposal\Proposal.Repository\obj\Debug\netcoreapp3.1\Proposal.Repository.pdb

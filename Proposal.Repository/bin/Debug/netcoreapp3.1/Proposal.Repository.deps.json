@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Proposal.Repository/1.0.0": {
+        "runtime": {
+          "Proposal.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Proposal.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
