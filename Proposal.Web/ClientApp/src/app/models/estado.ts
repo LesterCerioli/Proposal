@@ -1,4 +1,3 @@
-export class Estado {
-    id: number;
-    nome: string;
+export class Contato {
+
 }
