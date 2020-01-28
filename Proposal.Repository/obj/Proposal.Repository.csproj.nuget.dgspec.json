@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj": {}
+    "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj": {
+    "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj",
+        "projectUniqueName": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj",
         "projectName": "Proposal.Domain",
-        "projectPath": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\obj\\",
+        "projectPath": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj",
+        "packagesPath": "C:\\Users\\Diretoria2018\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Diretoria2018\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -60,20 +60,20 @@
         }
       }
     },
-    "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj": {
+    "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj",
+        "projectUniqueName": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj",
         "projectName": "Proposal.Repository",
-        "projectPath": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Repository\\obj\\",
+        "projectPath": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Repository\\Proposal.Repository.csproj",
+        "packagesPath": "C:\\Users\\Diretoria2018\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Diretoria2018\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -87,8 +87,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj": {
-                "projectPath": "C:\\Users\\Developer\\source\\repos\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj"
+              "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj": {
+                "projectPath": "D:\\Repositories\\Azure Blend\\NovoRepositorio\\Proposta\\Proposal.Domain\\Proposal.Domain.csproj"
               }
             }
           }

@@ -12,6 +12,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { SectionComponent } from './section/section.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { ProposalComponent } from './proposal/proposal.component';
+import { GuardaRotas } from './autorizacao/guarda.rotas';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,12 @@ import { ProposalComponent } from './proposal/proposal.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'resources', component: ResourcesComponent },
-      { path: 'customers', component: CustomersComponent },
-      { path: 'section', component: SectionComponent },
-      { path: 'templates', component: TemplatesComponent },
-      { path: 'proposal', component: ProposalComponent },
+      { path: 'entrar', component: HomeComponent },
+      { path: 'resources', component: ResourcesComponent, canActivate: [GuardaRotas] },
+      { path: 'customers', component: CustomersComponent, canActivate: [GuardaRotas] },
+      { path: 'section', component: SectionComponent, canActivate: [GuardaRotas] },
+      { path: 'templates', component: TemplatesComponent, canActivate: [GuardaRotas] },
+      { path: 'proposal', component: ProposalComponent, canActivate: [GuardaRotas] },
     ])
   ],
   providers: [],

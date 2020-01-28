@@ -1,4 +1,4 @@
- using Proposal.Domain.Entidades;
+using Proposal.Domain.Entidades;
 using System;
 
 namespace Proposal.Domain.Entities
@@ -17,19 +17,19 @@ namespace Proposal.Domain.Entities
         public override void Validate()
         {
             if (string.IsNullOrEmpty(Email))
-                AdicionarCritica("Email nï¿½o foi informado");
+                AdicionarCritica("Email não foi informado");
 
             if (string.IsNullOrEmpty(Senha))
-                AdicionarCritica("Senha nï¿½o foi informado");
+                AdicionarCritica("Senha não foi informado");
 
             if (string.IsNullOrEmpty(Login))
-                AdicionarCritica("Login nï¿½o foi informado");
+                AdicionarCritica("Login não foi informado");
 
             if (string.IsNullOrEmpty(Nome))
-                AdicionarCritica("Nome nï¿½o foi informado");
+                AdicionarCritica("Nome não foi informado");
 
             if (string.IsNullOrEmpty(SobreNome))
-                AdicionarCritica("Sobrenome nï¿½o foi informado");
+                AdicionarCritica("Sobrenome não foi informado");
         }
     }
 }

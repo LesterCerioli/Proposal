@@ -24,12 +24,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\autorizacao\guarda.rotas.ts" />
     <None Remove="ClientApp\src\app\proposal\proposal.component.ts" />
     <None Remove="ClientApp\src\app\section\section.component.ts" />
     <None Remove="ClientApp\src\app\templates\templates.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\src\assets\imagens\blendit-logo.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\autorizacao\guarda.rotas.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\proposal\proposal.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\section\section.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\templates\templates.component.ts" />
@@ -48,8 +54,8 @@
   <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
-    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
